@@ -86,7 +86,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* ---------Base Header - Footer Styles-------------*/
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+   /* ---------Base Header - Footer Styles-------------*/
 
 header,
 footer {
@@ -98,16 +103,24 @@ footer {
 
 /*  Header styles  */
 
+header {
+  padding: 15px 0;
+}
+
 
 header .content-wrapper {
   display:flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
 .header-divider {
-
+  width:100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+  background: #3a3a3a;
 }
 
 header nav {
@@ -115,13 +128,31 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width:60%;
 }
 
 header nav ul {
   display:flex;
   justify-content: space-around;
+  width: 100%;
 }
 
+footer {
+  flex-direction: column;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
 
 footer .social-icons {
   display:flex;
@@ -134,12 +165,23 @@ footer .social-icons p {
   justify-content: center;
   align-items: center;
 }
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+
 /* ------------------Mobile Styles - Homepage -----------------*/
 
 .hero-area {
   display:flex;
   justify-content: center;
   flex-flow: row wrap;
+  width:100%;
+}
+
+.hero-area .content-wrapper {
+  margin: 50px 20px;
 }
 
 aside {
@@ -147,6 +189,12 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
+}
+
+aside .content-wrapper {
+  width: 90%;
+  padding:30px 20px;
 }
 
 aside .form {
@@ -157,6 +205,11 @@ aside .form {
   display:flex;
   justify-content: center;
   flex-flow: row wrap;
+  width: 100%;
+}
+
+.features .content-wrapper {
+  width: 90%;
 }
 
 .features .features-items {
@@ -166,10 +219,27 @@ aside .form {
   flex-flow: row wrap;
 }
 
+.features .article {
+  width: 55%;
+}
+
+.features p {
+  margin: 0;
+}
+
 .reviews {
   display:flex;
   justify-content: center;
   flex-flow: row wrap;
+  width: 100%;
+}
+
+.reviews .content-wrapper {
+  width: 90%;
+}
+
+.reviews h3 {
+  width: 55%;
 }
 
 /* ----- About Page ---- */
