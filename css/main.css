@@ -105,6 +105,7 @@ footer {
 
 header {
   padding: 15px 0;
+  background: #202322;
 }
 
 
@@ -190,6 +191,7 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
+  background: #527158;
 }
 
 aside .content-wrapper {
@@ -232,6 +234,7 @@ aside .form {
   justify-content: center;
   flex-flow: row wrap;
   width: 100%;
+  background: #2a423a;
 }
 
 .reviews .content-wrapper {
@@ -366,6 +369,7 @@ aside .form {
 
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
+
   /* General Styles*/
 .content-wrapper {
     max-width: 640px;
@@ -432,8 +436,17 @@ aside .content-wrapper .form {
   justify-content: space-between;
 }
 
+.reviews img {
+  width: 300px;
+}
+
+.reviews h1 {
+  color: #e2e3ed;
+}
+
 .reviews article div {
   width: 49%;
+  color:  #e2e3ed;
 }
 
 /* Footer */
@@ -488,11 +501,13 @@ footer .copyright {
 .faq-section .content-wrapper {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
+  flex-basis: 100%;
+  margin: 100px 0;
 }
 
 .question {
-  flex-basis: 40%;
+  flex-basis: 45%;
 }
 
 .faq-section h1 {
@@ -504,6 +519,11 @@ footer .copyright {
 
 @media only screen and (min-width:1200px) {
   /*Desktop styles here*/
+}
+
+header footer {
+  max-width: 1000px;
+  justify-content: space-between;
 }
 
 /* ==========================================================================
